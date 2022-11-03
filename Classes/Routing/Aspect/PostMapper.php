@@ -16,12 +16,12 @@ namespace FelixNagel\T3extblog\Routing\Aspect;
  */
 class PostMapper extends AbstractPersistedAliasMapper
 {
-    protected string $datePrefix;
-    
-    protected string $datePrefixRegex;
-    
+    protected ?string $datePrefix;
+
+    protected ?string $datePrefixRegex;
+
     protected bool $datePrefixLowercase = false;
-    
+
     protected string $dateFieldName;
 
     public function __construct(array $settings)
